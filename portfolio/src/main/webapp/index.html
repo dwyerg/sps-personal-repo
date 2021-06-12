@@ -108,11 +108,20 @@ and is wrapped around the whole page content, except for the footer in this exam
         </div>
     <h1>Availibility</h1>
     <p>Click this button to see my availibility.</p>
-    <button onclick="showAvailibility();">
+    <button onclick="showFav();">
       Get Availibility
     </button>
-    <p id="avail-container"></p>
+    <ul id="fav-container"></ul>
+    <p>Click <a href="/fav">here</a> to see the server response directly.</p>
+
         <div class="w3-col m4 w3-hide-small">
+            
+<form action="/form-handler" method="POST">
+  <p>Send me your email below and I will get back to you:</p>
+  <textarea name="text-input">example@email.com</textarea>
+  <br/>
+  <input type="submit" />
+</form>
         </div>
       </div>
     </div>
