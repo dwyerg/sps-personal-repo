@@ -13,7 +13,6 @@
       <p>I am working on understanding the git repo.</p>
       <p>I am a sophomore at the University of Michigan and I am studying Information Analytics.</p>
       <img src="images/IMG_1372.jpeg"/>
-      <p>Click <a href="/hello">here</a> to see content created by server code.</p>
       <p>Click here to get a random message:</p>
       <button onclick="addRandomGreeting()">Hello</button>
       <div id="greeting-container"></div>
@@ -32,6 +31,8 @@
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway"-->
         <link rel="stylesheet" href="style.css">
         <script src="script.js"></script>
+        <script src="script_copy.js"></script>
+
     </head>
 
 <body>
@@ -81,6 +82,7 @@ and is wrapped around the whole page content, except for the footer in this exam
         <li>Designed and produced program materials -sketches, documents on Photoshop, YouTube videos, book formatting- for both a tutor training course and published books
 </li>
     </ul>
+        <p>Click <a href="/hello">here</a> to see content created by server code.</p>
         <div class="w3-row">
         <div class="w3-col m8 s12">
         </div>
@@ -104,7 +106,22 @@ and is wrapped around the whole page content, except for the footer in this exam
         <div class="w3-row">
         <div class="w3-col m8 s12">
         </div>
+    <h1>Availibility</h1>
+    <p>Click this button to see my availibility.</p>
+    <button onclick="showFav();">
+      Get Availibility
+    </button>
+    <ul id="fav-container"></ul>
+    <p>Click <a href="/fav">here</a> to see the server response directly.</p>
+
         <div class="w3-col m4 w3-hide-small">
+            
+<form action="/form-handler" method="POST">
+  <p>Send me your email below and I will get back to you:</p>
+  <textarea name="text-input">example@email.com</textarea>
+  <br/>
+  <input type="submit" />
+</form>
         </div>
       </div>
     </div>
